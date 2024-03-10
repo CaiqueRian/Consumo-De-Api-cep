@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(255, 58, 58);
+
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "nome email ."
+    "cep rua numero"
+    "bairro cidade estado"
+    ;
+}
+
+#containerPrincipal{
+    width: 80%;
+    margin: 0 auto;
+
+}
+#titulo{
+    grid-area: titulo;
+    text-align: center;
+}
+
+#nome{
+    grid-area: nome;
+}
+
+#email{
+    grid-area: email;
+}
+
+#cep{
+    grid-area: cep;
+}
+
+#bairro{
+    grid-area: bairro;
+}
+
+#numero{
+    grid-area: numero;
+}
+
+#cidade{
+    grid-area: cidade;
+}
+
+#estado{
+    grid-area: estado;
+}
+
+#rua{
+    grid-area: rua;
+}
