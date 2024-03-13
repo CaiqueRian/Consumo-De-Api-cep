@@ -15,61 +15,58 @@
   <body>
     <main class=".container grid" id="containerPrincipal">
 
-      <div id="titulo">
-        <h1 id="title">Cadastro</h1>
-      </div>
+        <div id="titulo">
+          <h1 id="title">Cadastro</h1>
+        </div>
 
-      <div id="nome" >
-        <label for="nome">Nome</label>
-        <br>
-        <input type="text"/>
-      </div>
+        <div id="nome">
+          <label class="textoLabel" for="nomeLabel">Nome</label>
+          <input type="text" class="inputPadrao" id="nomeLabel" />
+        </div>
 
-      <div id="email">
-        <label for="email">Email</label>
-        <br>
-        <input type="email"  />
-      </div>
-      
-      <div id="cep">
-        <label for="cep">Cep</label>
-        <br>
-        <input type="cep"  />
-      </div>
+        <div id="senha">
+          <label class="textoLabel" for="senhaLabel">Senha</label>
+          <input type="password" class="inputPadrao" id="senhaLabel" />
+        </div>
 
-      <div id="bairro">
-        <label for="bairro">Bairro</label>
-        <br>
-        <input type="bairro"  />
-      </div>
+        <div id="email">
+          <label class="textoLabel" for="emailLabel">Email</label>
+          <input type="email" class="inputPadrao" id="emailLabel" />
+        </div>
 
-      <div id="rua">
-        <label for="rua">Rua</label>
-        <br>
-        <input type="rua"  />
-      </div>
+        <div id="cep">
+          <label class="textoLabel" for="cepLabel">Cep</label>
+          <input type="number" class="inputPadrao" id="cepLabel" />
+        </div>
 
-      <div id="cidade">
-        <label for="cidade">Cidade</label>
-        <br>
-        <input type="cidade"  />
-      </div>
+        <div id="bairro">
+          <label class="textoLabel" for="bairroLabel">Bairro</label>
+          <input type="text" class="inputPadrao" id="bairroLabel" />
+        </div>
 
-      <div id="numero">
-        <label for="numero">Numero</label>
-        <br>
-        <input type="numero"  />
-      </div>
+        <div id="rua">
+          <label class="textoLabel" for="ruaLabel">Rua</label>
+          <input type="text" class="inputPadrao" id="ruaLabel" />
+        </div>
 
-      <div id="estado">
-        <label for="estado">Estado</label>
-        <br>
-        <input type="estado"  />
-      </div>
+        <div id="cidade">
+          <label class="textoLabel" for="cidadeLabel">Cidade</label>
+          <input type="text" class="inputPadrao" id="cidadeLabel" />
+        </div>
 
+        <div id="numero">
+          <label class="textoLabel" for="numeroLabel">Numero</label>
+          <input type="text" class="inputPadrao" id="numeroLabel" />
+        </div>
 
+        <div id="estado">
+          <label class="textoLabel" for="estadoLabel">Estado</label>
+          <input type="text" class="inputPadrao" id="estadoLabel" />
+        </div>
 
-      
+        <div id="btn">
+          <button class="botao" onclick="pesquisarCep()">ENVIAR</button>
+        </div>
     </main>
 
     <script src="main.js"></script>

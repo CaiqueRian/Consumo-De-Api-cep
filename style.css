@@ -1,26 +1,54 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
 body{
-    background-color: rgb(255, 58, 58);
+    background-color: #0095FF;
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
 
 }
 
+
+
 .grid{
     display: grid;
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "nome email ."
-    "cep rua numero"
-    "bairro cidade estado"
+    grid-template: 
+    "titulo titulo titulo" 70px
+    "nome email senha" 70px
+    "cep rua numero"  70px
+    "bairro cidade estado" 70px 
+    "btn btn btn"
     ;
 }
 
 #containerPrincipal{
     width: 80%;
     margin: 0 auto;
-
 }
+
+#title {
+    color: white;
+}
+
+.textoLabel{
+    color: white;
+    transition: .5s;
+    cursor: text;
+}
+
 #titulo{
     grid-area: titulo;
     text-align: center;
+}
+
+#senha{
+    grid-area: senha;
 }
 
 #nome{
@@ -39,6 +67,7 @@ body{
     grid-area: bairro;
 }
 
+
 #numero{
     grid-area: numero;
 }
@@ -53,4 +82,32 @@ body{
 
 #rua{
     grid-area: rua;
+}
+
+.inputPadrao{
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    transition: .5s;
+    padding: 0 10px;
+}
+
+.inputPadrao:valid{
+    height: auto;
+    background-color: #000000;
+
+}
+
+.botao {
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+}
+
+#btn{
+    grid-area: btn;
+    display: grid;
+    justify-content: center;
 }
