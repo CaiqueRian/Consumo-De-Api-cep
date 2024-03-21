@@ -96,7 +96,7 @@ body{
 
 .inputPadrao:valid{
     height: auto;
-    background-color: #000000;
+    background-color: #dedede;
 
 }
 
